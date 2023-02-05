@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(153, 67, 67);
+}
+
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color:  #FFDB58;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+article {
+    height: calc(100vh - 6rem);
+    left:50px;
+    float: left;
+    padding: 100px;
+    background-color:#201E20;
+   /* only for demonstration, should be removed */
+  }
+
+section#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 6rem);
+    border-radius: 3px;
+    width: 65%;
+    margin-left: 45%;
+}
+
+section#home{
+    text-decoration: teal;
+}
+
+.carousel-item {
+    carousel-control-color: white;
+    carousel-control-width:15%;
+    carousel-control-opacity:.5;
+    carousel-control-hover-opacity: .9;
+    carousel-control-transition:  opacity .30s ease;
+}
+
+.get_in_touch{
+    max-width: 800px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0, 2, 122, 0.753);
+    padding: 50px;
+}
+
+.get_in_touch .title{
+    
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color:#000000;
+    background: linear-gradient(to right,#FFDB58 0%,#3A6B35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field{
+    position: center;
+    margin: 32px 0
+}
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0
+}
+.form-floating{
+    position:relative;
+
+}
+.icon{
+    position: absolute;
+    top:calc(50%);
+    left:1.25rem; 
+}
+.form-floating label{
+    left :.500rem;
+    padding-left: 3.5rem;
+}
+footer .socialmedia{
+    font-size: xx-large;
+}
+/*
+
+footer {
+    background-color: #FFDB58;
+    color: #800020;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+}*/
+footer p{
+    text-align: center;
+    width: 100%;
+}
+
+section#products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section#products h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section#products ul {
+    list-style: none;
+    margin-left : 50%;
+    padding: 0;
+    display: block;
+    flex-wrap: wrap;
+    
+}
+
+section#products li {
+    width: 65%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+
+section#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section#about h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.nav-item a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+section ul .border{
+    right: 0;
+}
+header nav ul li .dropdown {
+    /* previous css */
+    min-width: 150px;
+   /* box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.678);  */
+    z-index: 1;
+    background-color: #201E20;
+}
+/*Products dropdown */
+header nav ul li:hover .dropdown {
+    display: block;
+}
+header nav ul li .dropdown{
+	display: none;
+  position: absolute;
+}
+
+
+header nav ul li .dropdown a {
+    color:  #3A6B35;
+    text-decoration: none;
+    display: block;
+    
+}
+
+header nav ul li .dropdown a:hover {
+    background-color:#201E20;
+}
+
+header nav ul li .serv {
+    /* previous css */
+    min-width: 150px;
+    z-index: 1;
+    background-color: #201E20;
+}
+
+/*Services dropdown */
+header nav ul li:hover .serv {
+    display: block;
+}
+
+/* Hide Dropdowns by Default */
+header nav ul ul .serv{
+	display: none;
+  position: absolute;
+}
+header nav ul li .serv{
+	display: none;
+  position: absolute;
+}
+
+header nav ul li .serv a {
+    color:  #3A6B35;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .serv a:hover {
+    background-color: #201E20;
+}
+/*
+.logo{
+    content: url(anytry.jpg);
+    border-radius: 50%;
+    height: 150px;
+    float: right;
+    top: 10px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    filter: contrast(110%) brightness(110%);
+}
+ animated slide bar
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+.slide1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  */
+/* On screens that are 992px wide or less, go from four columns to two columns 
+@media screen and (max-width: 992px) {
+  section {
+    width: 50%;
+  }
+}
+
+@media (max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}*/
